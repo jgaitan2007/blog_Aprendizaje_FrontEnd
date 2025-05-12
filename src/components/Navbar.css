@@ -1,17 +1,22 @@
 .navbar {
     display: flex;
-    flex-direction: column; /* Cambiar a columna para centrar verticalmente */
-    justify-content: center; /* Centrar verticalmente */
-    align-items: center; /* Centrar horizontalmente */
-    padding: 20px; /* Ajustar el padding */
-    background-color: #0066cc;
-    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #2A2A3F, #1E1E2F); /* Fondo degradado oscuro */
+    color: #FFFFFF; /* Texto claro */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
-    text-align: center; /* Centrar el texto */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra pronunciada */
+}
+
+.navbar h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6C63FF; /* Morado vibrante */
 }
 
 .navbar-logo img {
@@ -25,7 +30,7 @@
 }
 
 .nav-link {
-    color: white;
+    color: #FFFFFF; /* Texto claro */
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -33,5 +38,5 @@
 }
 
 .nav-link:hover {
-    color: #ffcc00;
+    color: #FF6F61; /* Rojo coral */
 }

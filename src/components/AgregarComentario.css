@@ -1,16 +1,16 @@
 .agregar-comentario-form {
-  background-color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(135deg, #2A2A3F, #1E1E2F); /* Fondo degradado oscuro */
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra pronunciada */
   max-width: 500px;
   margin: 20px auto;
+  color: #FFFFFF; /* Texto claro */
 }
 
 .agregar-comentario-form h3 {
   text-align: center;
-  margin-bottom: 20px;
-  color: #0066cc;
+  color: #6C63FF; /* Morado vibrante */
 }
 
 .form-group {
@@ -20,6 +20,7 @@
 .form-group label {
   display: block;
   font-weight: bold;
+  color: #6C63FF; /* Morado vibrante */
   margin-bottom: 5px;
 }
 
@@ -27,9 +28,19 @@
 .form-group textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #6C63FF; /* Morado vibrante */
+  border-radius: 8px;
   font-size: 16px;
+  background-color: #FFFFFF; /* Fondo blanco */
+  color: #000000; /* Texto negro */
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #FF6F61; /* Rojo coral */
+  background-color: #F8F9FA; /* Fondo gris claro */
+  outline: none;
 }
 
 .form-group textarea {
@@ -40,15 +51,17 @@
 .submit-button {
   display: block;
   width: 100%;
-  padding: 10px;
-  background-color: #0066cc;
+  padding: 12px;
+  background: linear-gradient(135deg, #6C63FF, #FF6F61); /* Fondo degradado */
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
 }
 
 .submit-button:hover {
-  background-color: #005bb5;
+  background: linear-gradient(135deg, #FF6F61, #4E4EFF); /* Cambio de degradado */
+  transform: scale(1.05); /* Efecto de zoom */
 }

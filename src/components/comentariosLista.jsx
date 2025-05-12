@@ -1,11 +1,9 @@
 import React from "react"
 import { useComentarios } from "../shared/hooks"
-import { useNavigate } from "react-router-dom"
 import "./comentariosLista.css"
 
 export const ComentariosLista = ({ publicationId }) => {
   const { comentarios, loading } = useComentarios(publicationId)
-  const navigate = useNavigate()
 
   if (loading) {
     return <p>Cargando comentarios...</p>
