@@ -1,0 +1,145 @@
+/* filepath: c:\Users\alexa\OneDrive\Escritorio\jos\Blog-Front\src\pages\publicaciones\publicacionesPagina.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('../../assets/fondoDeBlog.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Hace que el fondo sea fijo */
+    background-color: transparent;
+}
+/* Contenedor general */
+.publicaciones-container {
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 80px auto; /* Ajustado para espacio debajo del navbar */
+    min-height: calc(100vh - 80px); /* Ajustado para evitar solapamiento con el navbar */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    color: #ffffff;
+}
+
+/* Título de la tabla */
+.publicaciones-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #6C63FF; /* Cambiado a morado vibrante */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Tabla principal */
+.publicaciones-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Encabezado */
+.publicaciones-table thead {
+    background-color: #0066cc;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Celdas de encabezado y cuerpo */
+.publicaciones-table th,
+.publicaciones-table td {
+    padding: 16px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Última fila sin borde */
+.publicaciones-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Hover fila */
+.publicaciones-table tbody tr:hover {
+    background-color: rgba(0, 102, 204, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Botones de acción */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Botón estilo ícono */
+.icon-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover efecto para botón */
+.icon-button:hover {
+    background-color: rgba(0, 102, 204, 0.2);
+}
+
+/* Efecto clic */
+.icon-button:active {
+    transform: scale(0.95);
+}
+
+/* Íconos de editar y eliminar */
+.icon-edit {
+    color: #f0ad4e;
+    font-size: 20px;
+}
+
+.icon-delete {
+    color: #d9534f;
+    font-size: 20px;
+}
+
+/* Botón Añadir Comentario */
+.add-comment-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-comment-button:hover {
+    background-color: #218838;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .publicaciones-table th,
+    .publicaciones-table td {
+        font-size: 14px;
+        padding: 12px 10px;
+    }
+
+    .publicaciones-title {
+        font-size: 24px;
+    }
+}
+
+.table-section {
+    flex: 2;
+    color: #000000;
+}
