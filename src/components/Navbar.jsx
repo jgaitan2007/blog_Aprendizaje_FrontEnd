@@ -7,7 +7,6 @@ export const Navbar = () => {
         <nav className="navbar">
             <div>
                 <h1>Bienvenido a mi blog personal</h1>
-                <p>Este es un espacio donde comparto mis publicaciones y pensamientos sobre diversos cursos.</p>
             </div>
         </nav>
     )

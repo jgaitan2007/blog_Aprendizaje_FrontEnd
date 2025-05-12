@@ -1,5 +1,6 @@
 import React from "react"
 import { ComentariosLista } from "../../components"
+import { AgregarComentario } from "../../components/AgregarComentario"
 import { useLocation } from "react-router-dom"
 
 export const ComentariosPagina = () => {
@@ -11,6 +12,7 @@ export const ComentariosPagina = () => {
     <div className="comentarios-pagina">
       <h2>Comentarios</h2>
       <ComentariosLista publicationId={publicationId} />
+      <AgregarComentario publicationId={publicationId} />
     </div>
   )
 }

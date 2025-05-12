@@ -13,7 +13,7 @@ export const ComentariosLista = ({ publicationId }) => {
 
   // Filtrar comentarios en el componente
   const filteredComentarios = comentarios.filter(
-    (comentario) => comentario.publication?._id === publicationId // Cambiado a _id
+    (comentario) => comentario.publication?._id === publicationId
   )
 
   if (!filteredComentarios.length) {
@@ -21,14 +21,13 @@ export const ComentariosLista = ({ publicationId }) => {
   }
 
   return (
-    <div className="comentarios-container">
-      <h2 className="comentarios-title">Comentarios</h2>
-      {filteredComentarios.map((comentario) => (
-        <div className="comentario-item" key={comentario.uid}>
-          <p><strong>{comentario.author}:</strong> {comentario.description}</p>
-        </div>
-      ))}
-      <button onClick={() => navigate("/comentarios/nuevo")}>Añadir Comentario</button>
-    </div>
+  <div className="comentarios-container">
+    <h2 className="comentarios-title">Comentarios</h2>
+    {filteredComentarios.map((comentario) => (
+      <div className="comentario-item" key={comentario.uid}>
+        <p><strong>{comentario.author}:</strong> {comentario.description}</p>
+      </div>
+    ))}
+  </div>
   )
 }
